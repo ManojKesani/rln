@@ -1,0 +1,23 @@
+[project]
+name = "api"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "alembic>=1.20.0",
+    "arize-phoenix-otel>=0.17.2",
+    "asyncpg>=0.32.0",
+    "bcrypt>=5.0.0",
+    "fastapi>=0.143.0",
+    "httpx>=0.28.1",
+    "langchain>=1.4.3",
+    "langchain-openai>=1.6.7",
+    "langgraph-checkpoint-postgres>=3.1.2",
+    "openinference-instrumentation-langchain>=0.1.79",
+    "opentelemetry-instrumentation-fastapi>=0.66b1",
+    "psycopg[binary]>=3.3.6",
+    "pydantic-settings>=2.15.0",
+    "pyjwt>=2.15.1",
+    "redis>=8.1.0",
+    "sqlalchemy[asyncio]>=2.1.4",
+    "uvicorn[standard]>=0.54.0",
+]

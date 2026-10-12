@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0b1020; --p: #121a30; --p2: #1a2440; --b: #2a3659;
+  --t: #f2e9d8; --m: #8f9bb8; --a: #ffb347; --g: #5be3a0; --r: #ff6b6b;
+}
+:root[data-theme="light"] {
+  --bg: #f5efe0; --p: #fffaf0; --p2: #efe6d0; --b: #d8cba8;
+  --t: #2b2a33; --m: #7a7365; --a: #c2570c; --g: #1a7f4b; --r: #c0392b;
+}
+@theme inline {
+  --color-bg: var(--bg); --color-p: var(--p); --color-p2: var(--p2); --color-line: var(--b);
+  --color-fg: var(--t); --color-mut: var(--m); --color-acc: var(--a);
+  --color-ok: var(--g); --color-bad: var(--r);
+}
+html, body, #root { height: 100%; margin: 0; }
+body { background: var(--bg); color: var(--t); font: 14px/1.5 "Avenir Next", "Trebuchet MS", system-ui, sans-serif; }
+select, input, textarea, button { background: var(--p2); color: var(--t); border: 1px solid var(--b); border-radius: 6px; padding: 6px 10px; font: inherit; }
+button { cursor: pointer; }
+button:disabled { opacity: 0.5; cursor: default; }
+button.pri { background: var(--a); color: #1b1300; font-weight: 600; border-color: var(--a); }
